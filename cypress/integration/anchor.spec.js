@@ -4,7 +4,7 @@ describe("plugin", () => {
   });
 
   it("should trigger the click action when typing {enter}", () => {
-    cy.get("button").focus().type("{enter}");
-    cy.get("output").should("contain", "Button clicked!");
+    cy.get("a").focus().type("{enter}");
+    cy.get("output").should("contain", "Anchor clicked!");
   });
 });

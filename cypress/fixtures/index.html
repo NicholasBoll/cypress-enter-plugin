@@ -10,10 +10,14 @@
 
   <body>
     <button id="button">My Button</button>
+    <a id="anchor" href="#">My Anchor</a>
     <output id="output"></output>
     <script>
       document.getElementById("button").addEventListener("click", function () {
-        document.getElementById("output").textContent = "Clicked!";
+        document.getElementById("output").textContent = "Button clicked!";
+      });
+      document.getElementById("anchor").addEventListener("click", function () {
+        document.getElementById("output").textContent = "Anchor clicked!";
       });
     </script>
   </body>
